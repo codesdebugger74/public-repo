@@ -1,4 +1,4 @@
-/* Reset and Global Styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,29 +9,29 @@
 body {
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
     background: #333;
-    color: #fff;
+    color: white;
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ nav ul li a {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #fff;
+    background: white;
     color: #007bff;
     text-decoration: none;
     border-radius: 5px;
@@ -59,18 +59,41 @@ section {
     text-align: center;
 }
 
+/* Skills */
+.skill {
+    margin-bottom: 10px;
+}
+
+.progress {
+    background: #ddd;
+    width: 80%;
+    margin: 0 auto;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #007bff;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+}
+
 /* Projects */
 .project-container {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project-card {
     background: white;
     padding: 15px;
     border-radius: 5px;
-    width: 250px;
+    width: 300px;
 }
 
 .project-card img {
@@ -78,36 +101,18 @@ section {
     border-radius: 5px;
 }
 
-/* Contact */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+/* Testimonials */
+.testimonial {
+    background: white;
+    padding: 20px;
+    margin: 10px;
     border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background: #0056b3;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding
+    padding: 20px;
+    background: #333;
+    color: white;
+}
