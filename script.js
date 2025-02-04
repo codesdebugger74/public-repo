@@ -14,3 +14,4 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         document.getElementById("form-message").style.color = "red";
     }
 });
+
