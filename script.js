@@ -13,5 +13,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         document.getElementById("form-message").innerText = "Please fill out all fields.";
         document.getElementById("form-message").style.color = "red";
     }
+    console.log('in');
 });
 
